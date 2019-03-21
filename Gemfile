@@ -32,6 +32,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#
+# #START:jquery
+# # Use jquery as the JavaScript library
+gem 'jquery-rails'
+# #START_HIGHLIGHT
+gem 'jquery-ui-rails'
+# #END_HIGHLIGHT
+# #END:jquery
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
