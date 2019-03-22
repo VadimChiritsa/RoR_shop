@@ -32,7 +32,7 @@ class LineItemsController < ApplicationController
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to store_url }
-        format.js { @current_item = @line_item}
+        format.js { @current_item = @line_item }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
@@ -65,7 +65,8 @@ class LineItemsController < ApplicationController
       @line_item.update(quantity: @line_item.quantity)
     end
     respond_to do |format|
-      format.html { redirect_to store_url, notice: 'Item was successfully deleted.' }
+      format.html { redirect_to store_url }
+      format.js { @current_item = @line_item}
       format.json { head :no_content }
     end
   end
