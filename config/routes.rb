@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get :who_bought, on: :member
   end
   #resources :products
+  #
+
 
 
   root to: 'store#index', as: 'store'
